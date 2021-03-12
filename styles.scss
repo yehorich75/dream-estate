@@ -1,10 +1,50 @@
-.hero {
-    &__header {
-        display: flex;
-    }
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.hero {
+    background: url(../images/hero-bg-img.jpg) no-repeat top right;
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18.5rem;
+    }
+
+    &__content {
+        width: 50%;
+    }
+
+    &__title {
+        font-size: 6.4rem;
+        font-weight: 900;
+    }
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+.header__nav-item {
+    margin-left: 4rem;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: underline;
+    }
 }

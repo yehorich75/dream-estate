@@ -5,35 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream - Real Estate</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <section class="hero">
+            <div class="container">
             <header class="hero__header">
-                <div class="logo">
-                    <img src="images/dream-logo.svg" alt="D ream Logo">
-                </div>
-                <nav class="hero__header-nav">
-                    <ul>
-                        <li>Find House</li>
-                        <li>Community</li>
-                        <li>Our Blog</li>
-                    </ul>
-                </nav>
-                <div class="hero__header-btn">Login</div>
+                
+                    <div class="logo">
+                        <img src="images/dream-logo.svg" alt="D ream Logo">
+                    </div>
+                    <nav class="hero__header-nav">
+                        <ul>
+                            <li>Find House</li>
+                            <li>Community</li>
+                            <li>Our Blog</li>
+                        </ul>
+                    </nav>
+                    <div class="hero__header-btn">Login</div>
+                
+
             </header>
+        </div>
             <div class="hero__filter">
-                <form action="" method="post">
-                    <select size="1" multiple name="hero[]">
-                        <option disabled>Выберите героя</option>
-                    <option value="Чебурашка">Чебурашка</option>
-                    </select>
-                    
+                <form action="formdata" method="post" name="hero-form" id="data">
+                    <input type="text" placeholder="Select location..." id="myLocationInput" onkeyup="filterFunction()">
+                        <select size="1" multiple name="hero[]">
+                        <option selected>Select type...</option>
+                        <option value="Чебурашка">Чебурашка</option>
+                        <option value="2">2</option>
+                    </select>                
+                    <button type="submit" value="Send" form="data">
+                        <img src="images/icons/hero-search.svg" alt="Отправить">
+                    </button>               
                 </form>
-                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
             </div>
             <h1 class="hero__title">Choose Your Dream House</h1>
         </section>

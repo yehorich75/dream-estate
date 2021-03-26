@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500,600,800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <section class="hero">
+            <img class="hero__img" src="../images/hero-bg-img.jpg" alt="">
             <div class="container">
-                <header class="hero__header">
-                    <div class="logo">
-                        <img src="images/dream-logo.svg" alt="D ream Logo">
-                    </div>
+                <header class="hero__header">                  
+                    <img class="logo" src="images/dream-logo.svg" alt="D ream Logo">                
                     <nav class="hero__header-nav">
                         <ul class="header__nav-list">
                             <li class="header__nav-item"><a href="#" class="header__nav-link">Find House</a></li>
@@ -30,19 +29,19 @@
                 <div class="hero__content">
                     <h1 class="hero__title">Choose Your Dream House</h1>
                     <div class="hero__filter">
-                        <form action="formdata" method="post" name="hero-form" id="data">
-                            <input type="text" placeholder="Select location..." id="myLocationInput" onkeyup="filterFunction()">
+                        <form class="hero__filter-form" action="formdata" method="post" name="hero-form" id="data">
+                            <input type="text" placeholder="Bali, Indonesia" id="myLocationInput" onkeyup="filterFunction()">
                                 <select name="hero[]">
-                                <option selected>Select type...</option>
-                                <option value="Чебурашка">Чебурашка</option>
-                                <option value="2">2</option>
-                            </select>                
+                                    <option selected>Deluxe Type</option>
+                                    <option value="Чебурашка">Чебурашка</option>
+                                    <option value="2">2</option>
+                                </select>                
                             <button type="submit" value="Send" form="data">
                                 <img src="images/icons/hero-search.svg" alt="Отправить">
                             </button>               
                         </form>
                     </div>
-                    
+                    <h3 class="hero__subtitle">The Modern Deluxe House.</h3>
                 </div>
             </div>
         </section>

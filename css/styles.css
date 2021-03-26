@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
 }
 
 .container {
@@ -12,7 +13,17 @@ body {
 }
 
 .hero {
-  background: url(../images/hero-bg-img.jpg) no-repeat top right;
+  height: 100vh;
+  position: relative;
+}
+
+.hero__img {
+  background-size: cover;
+  width: 100%;
+  min-width: 400px;
+  height: auto;
+  z-index: -10;
+  position: absolute;
 }
 
 .hero__header {
@@ -25,13 +36,81 @@ body {
   margin-bottom: 18.5rem;
 }
 
-.hero__content {
-  width: 50%;
-}
-
 .hero__title {
   font-size: 6.4rem;
   font-weight: 900;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.hero__subtitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.hero__filter {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.hero__filter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fff;
+  padding: 1.8rem;
+}
+
+.hero__filter button {
+  background-color: #003458;
+  border: none;
+  height: 76px;
+  padding: 18px;
+}
+
+.hero__filter input,
+.hero__filter select {
+  font-size: 1.8rem;
+  font-weight: 400;
+  border: none;
+  background-color: #F2F9FB;
+  padding: 2.8rem 12.3rem 2.2rem 6.6rem;
+  margin-right: 2.4rem;
+  color: #333;
+}
+
+.hero__filter input::-moz-selection,
+.hero__filter select::-moz-selection {
+  color: #333;
+}
+
+.hero__filter input::selection,
+.hero__filter select::selection {
+  color: #333;
+}
+
+.hero__filter input::-webkit-input-placeholder,
+.hero__filter select::-webkit-input-placeholder {
+  color: #333;
+}
+
+.hero__filter input:-ms-input-placeholder,
+.hero__filter select:-ms-input-placeholder {
+  color: #333;
+}
+
+.hero__filter input::-ms-input-placeholder,
+.hero__filter select::-ms-input-placeholder {
+  color: #333;
+}
+
+.hero__filter input::placeholder,
+.hero__filter select::placeholder {
+  color: #333;
 }
 
 .header__nav-list {

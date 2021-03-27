@@ -16,6 +16,7 @@ body {
     // background: url(../images/hero-bg-img.jpg) no-repeat top right;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 
     &__img {
         background-size: cover;
@@ -46,6 +47,7 @@ body {
     &__filter {
         font-size: 1.8rem;
         font-weight: 600;
+        margin-bottom: 17.5rem;
 
         &-form {
             display: flex;
@@ -64,11 +66,10 @@ body {
         select {
             font-size: 1.8rem;
             font-weight: 400;
-            border: none;
-            background-color: #F2F9FB;
-            padding: 2.8rem 12.3rem 2.2rem 6.6rem;
-            margin-right: 2.4rem;
+            border: none;            
+            padding: 2.4rem 12.3rem 2.2rem 0;            
             color: #333;
+            background-color: inherit;
             &::selection {
                 color: #333;
             }
@@ -76,6 +77,30 @@ body {
                 color: #333;
             }
         }
+
+        input {
+            width: 13.1rem;
+        }
+
+        select option {
+            width: 11.1rem;
+        }
+    }
+
+    &__input, &__select {
+        &-container {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            background-color: #F2F9FB;
+            margin-right: 2.4rem;
+        }
+    }
+
+    .icon {
+        padding: 2.4rem;
+        min-width: 2.4rem;
+        text-align: center;
     }
 }
 

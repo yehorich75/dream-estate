@@ -15,6 +15,7 @@ body {
 .hero {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .hero__img {
@@ -52,6 +53,7 @@ body {
 .hero__filter {
   font-size: 1.8rem;
   font-weight: 600;
+  margin-bottom: 17.5rem;
 }
 
 .hero__filter-form {
@@ -77,10 +79,9 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   border: none;
-  background-color: #F2F9FB;
-  padding: 2.8rem 12.3rem 2.2rem 6.6rem;
-  margin-right: 2.4rem;
+  padding: 2.4rem 12.3rem 2.2rem 0;
   color: #333;
+  background-color: inherit;
 }
 
 .hero__filter input::-moz-selection,
@@ -111,6 +112,32 @@ body {
 .hero__filter input::placeholder,
 .hero__filter select::placeholder {
   color: #333;
+}
+
+.hero__filter input {
+  width: 13.1rem;
+}
+
+.hero__filter select option {
+  width: 11.1rem;
+}
+
+.hero__input-container, .hero__select-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F9FB;
+  margin-right: 2.4rem;
+}
+
+.hero .icon {
+  padding: 2.4rem;
+  min-width: 2.4rem;
+  text-align: center;
 }
 
 .header__nav-list {

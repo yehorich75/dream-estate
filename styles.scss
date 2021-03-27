@@ -1,3 +1,13 @@
+$main: #003458;
+$cecondary: #82CDE5; 
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 10px;
 }
@@ -29,7 +39,6 @@ body {
     &__header {
         display: flex;
         align-items: center;
-        margin-bottom: 18.5rem;
     }
 
     &__title {
@@ -37,12 +46,19 @@ body {
         font-weight: 900;
         text-transform: uppercase;
         width: 50%;
+        background-color: #F2F9FB;
+        padding: 15rem 2rem 0;
     }
 
     &__subtitle {
         font-family: Montserrat, sans-serif;
         font-size: 3.2rem;
         font-weight: 900;
+
+        background-color: #F2F9FB;
+
+        margin-bottom: 18.2rem;
+        width: 50%;
     }
     &__filter {
         font-size: 1.8rem;
@@ -56,7 +72,7 @@ body {
             padding: 1.8rem;
         }
         button {
-            background-color: #003458;
+            background-color: $main;
             border: none;
             height: 76px;
             padding: 18px;

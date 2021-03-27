@@ -1,3 +1,10 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 10px;
 }
@@ -34,7 +41,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 18.5rem;
 }
 
 .hero__title {
@@ -42,12 +48,17 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   width: 50%;
+  background-color: #F2F9FB;
+  padding: 15rem 2rem 0;
 }
 
 .hero__subtitle {
   font-family: Montserrat, sans-serif;
   font-size: 3.2rem;
   font-weight: 900;
+  background-color: #F2F9FB;
+  margin-bottom: 18.2rem;
+  width: 50%;
 }
 
 .hero__filter {
